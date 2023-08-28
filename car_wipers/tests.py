@@ -16,7 +16,7 @@ class CarWipersTestCase(unittest.TestCase):
         self.assertTrue(self.car_wipers.activate_wipers("monsoon"), "Did the car just turn into a submarine?")
 
     def test_wipers_snowstorm(self):
-        self.assertTrue(self.car_wipers.activate_wipers("snowstor"), "Wipers are now painting abstract art with snow!")
+        self.assertTrue(self.car_wipers.activate_wipers("snowstorm"), "Wipers are now painting abstract art with snow!")
 
     def test_wipers_desert(self):
         self.assertFalse(self.car_wipers.activate_wipers("sandstorm"), "Wipers are searching for water in the desert.")
