@@ -2,12 +2,12 @@ import unittest
 
 import xmlrunner
 
-from car_wipers.service import CarWipersService
+from windshield_wiper.service import WindshieldWiperService
 
 
-class CarWipersTestCase(unittest.TestCase):
+class WindshieldWipersTestCase(unittest.TestCase):
     def setUp(self):
-        self.car_wipers = CarWipersService()
+        self.car_wipers = WindshieldWiperService()
 
     def test_wipers_light_rain(self):
         self.assertTrue(self.car_wipers.activate_wipers("light rain"), "Wipers couldn't handle light rain!")
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     with open('results.xml', 'w') as output:
         unittest.main(
             testRunner=xmlrunner.XMLTestRunner(output=output),
-            failfast=False,
+            failfast=True,
             buffer=False,
             catchbreak=False
         )

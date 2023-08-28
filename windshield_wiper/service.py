@@ -1,4 +1,4 @@
-class CarWipersService:
+class WindshieldWiperService:
     @staticmethod
     def activate_wipers(weather_condition):
         # Simulate wipers activating based on weather conditions
@@ -19,4 +19,4 @@ class CarWipersService:
 
 # You can create an instance of CarWipersService and use it in your tests
 if __name__ == '__main__':
-    car_wipers = CarWipersService()
+    car_wipers = WindshieldWiperService()
