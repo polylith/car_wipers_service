@@ -6,7 +6,7 @@ from windshield_wiper.models import Car
 from windshield_wiper.service import WindshieldWiperService
 
 
-class CarWindshieldWiperTestCase(unittest.TestCase):
+class IntegrationWindshieldWiperTestCase(unittest.TestCase):
     def setUp(self):
         self.car = Car("AwesomeCars", "Model X")
         self.wiper_service = WindshieldWiperService()
